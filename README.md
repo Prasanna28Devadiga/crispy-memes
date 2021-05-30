@@ -53,8 +53,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+    <li
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -89,26 +88,11 @@ Stats:
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org/)
 * [GPT-3](https://beta.openai.com/)
-* [Laravel](https://laravel.com)
 
 ## Twitter Bot Handle
 
 This is the [link](https://twitter.com/JennyTa06647874) to the twitter bot handle which is automated to post the memes generated
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 <!-- ROADMAP -->
 ## Roadmap

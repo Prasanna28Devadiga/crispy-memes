@@ -8,7 +8,7 @@ text1=""
 with open("kc.txt", "r") as a_file:
   for line in a_file:
       text0 = line.strip()
-      querystring = {"template_id":"1202623","username":"PrasannaDevadiga","password":"jennytalia","text0":text0,"text1":""}
+      querystring = {"template_id":"1202623","username":"","password":"","text0":text0,"text1":""}
       response = requests.post(url,data=querystring )
       url_i=response.json()['data']['url']
       response = requests.get(url_i)

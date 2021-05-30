@@ -29,7 +29,6 @@
   <h3 align="center">Meme Generation using GPT-3</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -70,7 +69,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 This project has been an attempt at using SOTA Language models to create Memes.
 The entire process is carried out in 6 steps
 1. We scrape memes from particular templates

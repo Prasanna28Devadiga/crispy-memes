@@ -31,7 +31,7 @@
     <img src="images/logo.png" alt="Logo" >
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Meme Generation using GPT-3</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -66,7 +66,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -81,23 +80,25 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project has been an attempt at using SOTA Language models to create Memes.
+The entire process is carried out in 6 steps
+1. We scrape memes from particular templates
+2. we then pass these memes into an OCR to extract the text and write these into documents based on the template used. These documents form the dataset for our model to perform generation on. It is important to note that GPT-3 uses few shot learning , which is why it works well even with tiny datasets. Models of this size cant be possibly fine tuned by the masses which is why we use "prompt engineering" to teach it to perform tasks.
+3. We next pass on the documents to our model to perform text generation. It is incredibly difficult to write good prompts, and hence this stage requires plenty of handcrafting.
+4. This step involves removing noise from the output. As our prompts can’t be a 100% representative of our task (in our case that would be generating meme text) , there is an addition of unnecessary text in our outputs. 
+5. In the fifth step we pass the clean outputs to the Imgflip api to generate the memes. 
+6. In the sixth step we download these memes to a folder which we then serves as a database for our twitter bot. Our twitter bot continues to post these in fixed intervals for users to enjoy.
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Stats:
+1. We generated enough meme text for about 20,000 memes.
+2. We were able to create ~1000 memes before hitting the api limit for the day.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [GPT-3](https://beta.openai.com/)
 * [Laravel](https://laravel.com)
 
 
@@ -115,33 +116,6 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 <!-- ROADMAP -->
 ## Roadmap

@@ -74,7 +74,7 @@
 This project has been an attempt at using SOTA Language models to create Memes.
 The entire process is carried out in 6 steps
 1. We scrape memes from particular templates
-2. we then pass these memes into an OCR to extract the text and write these into documents based on the template used. These documents form the dataset for our model to perform generation on. It is important to note that GPT-3 uses few shot learning , which is why it works well even with tiny datasets. Models of this size cant be possibly fine tuned by the masses which is why we use "prompt engineering" to teach it to perform tasks.
+2. we then pass these memes into an OCR, which we built using the easyocr library, to extract the text and write these into documents based on the template used. These documents form the dataset for our model to perform generation on. It is important to note that GPT-3 uses few shot learning , which is why it works well even with tiny datasets. Models of this size cant be possibly fine tuned by the masses which is why we use "prompt engineering" to teach it to perform tasks.
 3. We next pass on the documents to our model to perform text generation. It is incredibly difficult to write good prompts, and hence this stage requires plenty of handcrafting.
 4. This step involves removing noise from the output. As our prompts can’t be a 100% representative of our task (in our case that would be generating meme text) , there is an addition of unnecessary text in our outputs. 
 5. In the fifth step we pass the clean outputs to the Imgflip api to generate the memes. 

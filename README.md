@@ -101,8 +101,9 @@ This section should list any major frameworks that you built your project using.
 * [GPT-3](https://beta.openai.com/)
 * [Laravel](https://laravel.com)
 
+## Twitter Bot Handle
 
-
+This is the [link](https://twitter.com/JennyTa06647874) to the twitter bot handle which is automated to post the memes generated
 <!-- GETTING STARTED -->
 ## Getting Started
 

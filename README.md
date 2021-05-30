@@ -87,7 +87,7 @@ The entire process is carried out in 6 steps
 3. We next pass on the documents to our model to perform text generation. It is incredibly difficult to write good prompts, and hence this stage requires plenty of handcrafting.
 4. This step involves removing noise from the output. As our prompts can’t be a 100% representative of our task (in our case that would be generating meme text) , there is an addition of unnecessary text in our outputs. 
 5. In the fifth step we pass the clean outputs to the Imgflip api to generate the memes. 
-6. In the sixth step we download these memes to a folder which we then serves as a database for our twitter bot. Our twitter bot continues to post these in fixed intervals for users to enjoy.
+6. In the sixth step we download these memes to a folder which we then serves as a database for our twitter bot. Our twitter bot continues to post these in random intervals for users to enjoy.
 
 Stats:
 1. We generated enough meme text for about 20,000 memes.

@@ -1,0 +1,37 @@
+# Replace where appropriate with your own settings.
+
+[Twitter]
+
+
+[App]
+image_folder = D:\Maymaygen\TwitterBot\Pictures\
+execution_chance = 1
+allow_repeat_after = 100
+log_file = D:\Maymaygen\TwitterBot\twitterImgBot\logs\log
+bot_account = @JennyTa06647874
+master_account = @Charles_V_J
+dont_tweet_file = D:\Maymaygen\TwitterBot\twitterImgBot\logs\banned
+
+[Orders]
+#caps agnostic
+ban_command = @JennyTa06647874 don't
+request_command = dear @JennyTa06647874
+time_tolerance = 5
+
+[Texts]
+# Respect indentation: it is TWO spaces
+# tweet_post_number is either True or False, nothing else
+# tweet this text doesn't requiere "" or '', just write the text
+tweet_post_number = True
+tweet_this_text =  This is a GPT-3 generated meme
+
+request_answers = specially for you. xoxo
+  only because you asked nicely. xoxo
+  this is one of my best. be grateful. xoxo
+  when you see your human partner, think of me. xoxo
+  remember: if you like it put a password on it. xoxo
+  humans are warmer. but what if you like the cold?. xoxo
+  can you feel your species deprecation?. xoxo
+request_to_third_answers = you just got a nice gift from
+  apparently this person likes you
+
